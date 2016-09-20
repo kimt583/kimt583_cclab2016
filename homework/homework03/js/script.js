@@ -1,14 +1,14 @@
 $(document).ready(function () { 
   
 
-  // This function gets the data from the YouTube API and displays it on the page
+  //gets the data from the YouTube API and displays it on the page
   function getResults(searchTerm) {
     $.getJSON("https://www.googleapis.com/youtube/v3/search",
       {
         "part": "snippet",
         "key": "AIzaSyBkK8PEuhSfyz05gnUWhwOuE5cqWV5Oa3A",
         "q": searchTerm,
-        "maxResults": 1
+        "maxResults": 3
       },
       function (data) {
         if (data.pageInfo.totalResults == 0) {
@@ -41,26 +41,26 @@ $(document).ready(function () {
 });
 
 
-//This code loads the IFrame Player API code asynchronously.
-var tag = document.createElement('script');
+// //loads the IFrame Player API code asynchronously.
+// var tag = document.createElement('script');
 
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+//     tag.src = "https://www.youtube.com/iframe_api";
+//     var firstScriptTag = document.getElementsByTagName('script')[0];
+//     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-// This function creates an <iframe> (and YouTube player)
-// after the API code downloads.
-var player;
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-        height: '390',
-        width: '100%',
-        videoId: 'video.id.videoId',
-        playerVars: { 
-            'autoplay': 0, 
-            'controls': 1,
-            'showinfo': 0
-        },
+// // creates an <iframe> (and YouTube player)
+// // after the API code downloads.
+// var player;
+// function onYouTubeIframeAPIReady() {
+//     player = new YT.Player('player', {
+//         height: '390',
+//         width: '100%',
+//         videoId: 'video.id.videoId',
+//         playerVars: { 
+//             'autoplay': 0, 
+//             'controls': 1,
+//             'showinfo': 0
+//         },
 
-    });
-}
+//     });
+// }
