@@ -1,0 +1,106 @@
+span{
+  color: #4CAF50;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+p{
+  font-family: tahoma;
+}
+ul{
+  list-style-type: none;
+  padding-left:0;
+}
+
+#youtubeLogo{
+  display: block;
+  width:300px;
+  margin:0 auto;
+}
+
+body {
+  text-align: center;
+}
+
+#page-wrap {
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+}
+
+#search-form{
+  width: 500px;
+  margin:0 auto;
+}
+
+#search-term{
+  width: 50%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: white;
+  background-size: 20px 20px;
+  background-image: url('http://www.clipartkid.com/images/775/search-icon-clip-art-at-clker-com-vector-clip-art-online-royalty-643l5L-clipart.png');
+  background-position: 13px 13px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  
+}
+#search-term:focus{
+  outline: none;
+}
+
+
+
+#submit {
+  display: inline-block;
+  padding: 8px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 3px #999;
+}
+
+#submit:hover {background-color: #3e8e41}
+
+#submit:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+
+
+#text{
+  display: block;
+  width:350px;
+  font-size: 15px;
+  color: #555;
+  background-color: #ddd;
+  border: none;
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
+#player{
+  width:300;
+  height:300;
+  background:black;
+}
+
+
+
+
+
+
+
+
+
+
+
